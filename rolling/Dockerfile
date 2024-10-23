@@ -1,8 +1,4 @@
-ARG VERSION=rolling
-
-FROM owncloud/ocis:${VERSION}
-
-LABEL maintainer="Thien Tran contact@tommytran.io"
+FROM owncloud/ocis-rolling:latest
 
 USER root
 
