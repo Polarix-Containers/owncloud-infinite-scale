@@ -11,7 +11,7 @@ RUN apk -U upgrade \
 
 RUN userdel ocis-user \
     && groupdel ocis-group \
-    && addgroup -g 3004 -S ocis-group && \
+    && addgroup -g 3004 -S ocis-group \
     && adduser -S --ingroup ocis-group --uid 3004 ocis-user --home /var/lib/ocis \
     && chown -R ocis-user:ocis-group /var/lib/ocis
 
