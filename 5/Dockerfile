@@ -14,7 +14,7 @@ USER root
 RUN apk -U upgrade \    
     && rm -rf /var/cache/apk/*
 
-    RUN deluser ocis-user \
+RUN deluser ocis-user \
     && delgroup ocis-group \
     && addgroup -g ${GID} --system ocis-group \
     && adduser -u ${UID} --ingroup ocis-group -h /var/lib/ocis --disabled-password --system ocis-user \
