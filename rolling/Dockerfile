@@ -16,7 +16,7 @@ RUN apk -U upgrade \
 RUN deluser ocis-user \
     && delgroup ocis-group \
     && addgroup -g ${GID} --system ocis-group \
-    && adduser -u ${UID} --ingroup ocis-group -h /var/lib/ocis --disabled-password --system ocis-user \
+    && adduser -u ${UID} --ingroup ocis-group --disabled-password --system ocis-user --home /var/lib/ocis \
     && chown -R ocis-user:ocis-group /var/lib/ocis
 
 COPY --from=ghcr.io/polarix-containers/hardened_malloc:latest /install /usr/local/lib/
