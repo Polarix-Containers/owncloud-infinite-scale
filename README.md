@@ -1,4 +1,4 @@
-# owncloud-infinite-scale
+# ownCloud Infinite Scale
 
 ![Build 5, scan & push](https://github.com/Polarix-Containers/owncloud-infinite-scale/actions/workflows/build-5.yml/badge.svg)
 ![Build rolling, scan & push](https://github.com/Polarix-Containers/owncloud-infinite-scale/actions/workflows/build-rolling.yml/badge.svg)
