@@ -1,5 +1,5 @@
-ARG UID=3004
-ARG GID=3004
+ARG UID=200004
+ARG GID=200004
 
 FROM owncloud/ocis-rolling:latest
 
