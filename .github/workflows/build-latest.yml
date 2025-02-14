@@ -1,4 +1,4 @@
-name: Build 5
+name: Build latest
 
 on:
   workflow_dispatch:
@@ -6,7 +6,7 @@ on:
     branches:
       - main
     paths:
-      - '.github/workflows/build-5.yml'
+      - '.github/workflows/build-latest.yml'
       - '5/**'
   schedule:
     # Build the image daily
@@ -15,7 +15,7 @@ on:
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: polarix-containers/owncloud-infinite-scale
-  TAG: 5
+  TAG: latest
 
 jobs:
   build:
@@ -52,7 +52,6 @@ jobs:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: |
             ${{ env.TAG }}
-            latest
 
       - name: Build and push Docker image
         id: build-and-push

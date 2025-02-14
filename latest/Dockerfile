@@ -1,8 +1,7 @@
-ARG VERSION=5
 ARG UID=200004
 ARG GID=200004
 
-FROM owncloud/ocis:${VERSION}
+FROM owncloud/ocis
 
 LABEL maintainer="Thien Tran contact@tommytran.io"
 
